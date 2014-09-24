@@ -1,7 +1,37 @@
 .portrait {
-	background-color: blue;
+	.page {
+		margin-bottom: 10px;
+	}
 }
 
 .landscape {
-	background-color: red;
+	.book {
+		display: table;
+	}
+
+	.pages {
+		display: table-row;
+		vertical-align: top;
+		clear: both;
+	}
+
+	.page {
+		display: table-cell;
+		min-width: 990px;
+		height: 100%;
+
+		&:last-child {
+			min-width: 970px;
+		}
+
+		img {
+			width: 970px;
+			max-height: 100%;
+		}
+	}
+}
+
+.heidelberg-tapToOpen {
+	position: absolute;
+	z-index: 2;
 }
