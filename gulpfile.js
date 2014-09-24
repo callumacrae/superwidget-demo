@@ -6,8 +6,8 @@ var browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
 	return gulp.src(['assets/*.scss', '!assets/_*.scss'])
-		.pipe(plugins.rubySass({ sourcemap: true, sourcemapPath: '../assets' }))
-		.on('error', function (err) { console.log(err.message); })
+		.pipe(plugins.rubySass())
+		.pipe(plugins.plumber())
 		.pipe(plugins.autoprefixer())
 //		.pipe(plugins.minifyCss())
 		.pipe(gulp.dest('build'));
@@ -34,5 +34,5 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('default', ['sass', 'browser-sync'], function () {
-	gulp.watch('assets/**/*.scss', ['scss']);
+	gulp.watch('assets/**/*.scss', ['sass']);
 });
