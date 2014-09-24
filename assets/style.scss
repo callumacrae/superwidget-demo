@@ -1,0 +1,75 @@
+body {
+	margin-top: 50px;
+
+	text-align: center;
+}
+
+[class^="panel-"]:not(.panel-first) {
+	display: none;
+}
+
+#lmn-hero-form {
+	position: static;
+
+	width: 1000px;
+	margin: 50px auto;
+
+	text-align: left;
+}
+
+.book1, .book2, .book-wrapped {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+
+	display: none;
+
+	img {
+		width: 490px;
+	}
+
+	span {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		padding: 5px 10px;
+
+		background-color: white;
+		border: 1px black solid;
+		opacity: 0;
+	}
+}
+
+.book-wrapped {
+	opacity: 0;
+}
+
+.basket {
+	position: absolute;
+	top: 420px;
+	right: 25%;
+
+	display: none;
+}
+
+.checkout {
+	position: absolute;
+	top: 550px;
+	right: 25%;
+
+	display: none;
+}
+
+p {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.details {
+	margin-top: 200px
+}
+
+.details, .address, .billing {
+	display: none;
+}

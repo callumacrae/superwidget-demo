@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SUPERWIDGET DEMO</title>
+
+	<link rel="stylesheet" href="//d12fm4vsc5tls2.cloudfront.net/assets/lmn-3f1566c3e8b217bd88d199d2c3f4e89e.css">
+	<link rel="stylesheet" href="build/style.css">
+</head>
+<body>
+	<div class="panel-first">
+		<div id="lmn-hero-form">
+			<div class="layer padded">
+				<form accept-charset="UTF-8" action="/products/lostmy-name" data-key="lmn-form" data-validation-icons="false" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+					<div class="row cols-spaced cols-to-rows-on-fablet-down rows-spaced">
+						<div class="col-1-3">
+							<input autocomplete="off" class="widest uppercase" data-error-target=".error-name" data-errorAsOpacity="true" data-focus-me="true" data-validations="namerequired nameavailability nameformat namespaces minlength maxlength" id="name" name="name" placeholder="First name" required="required" type="text" />
+							<label class="label-bubble label-bubble-error error-name hidden-on-fablet-down" for="name">This is an error in this name</label>
+							<label class="label-bubble label-bubble-until-valid" for="name">Who is the book for?</label>
+
+							<label class="label-bubble label-bubble-error error-gender error-name hidden-on-tablet-up" for="name">error</label>
+						</div>
+
+						<div class="col-1-3">
+							<div class="gender-switch">
+			  <span class="gender-switch-option">
+				<input class="gender-switch" data-error-target=".error-gender" data-errorAsOpacity="true" data-validations="genderrequired" id="gender_boy" name="gender" required="required" type="radio" value="boy" />
+				<label for="gender_boy">
+					Boy
+					<div class="face"><img alt="Boy small" sizes="(max-width: 777px) 4.8rem, 110px" src="https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/boy-small-c88190d52a459e2f97ac83c0b3dcbe25.png" srcset="https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/boy-small-c88190d52a459e2f97ac83c0b3dcbe25.png 55w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/boy-medium-a0b07b32bdb32441a69f5b97a455eb33.png 73w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/boy-large-28442484809361fab60d36075009ad20.png 110w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/boy-xlarge-68658e371a4c5ec37a230d6b8ddcd6f5.png 220w" width="110" /></div>
+				</label>          </span>
+			  <span class="gender-switch-option">
+				<input class="gender-switch" data-error-target=".error-gender" data-errorAsOpacity="true" data-validations="genderrequired" id="gender_girl" name="gender" required="required" type="radio" value="girl" />
+				<label for="gender_girl">
+					Girl
+					<div class="face"><img alt="Girl small" sizes="(max-width: 777px) 4.8rem, 110px" src="https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/girl-small-887b71ae59f75e0538b5700a00b17359.png" srcset="https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/girl-small-887b71ae59f75e0538b5700a00b17359.png 55w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/girl-medium-41815468cefbe8d49e77641016216c1f.png 73w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/girl-large-e4f0c9a3e91053b8f5170fdc991001a3.png 110w, https://d12fm4vsc5tls2.cloudfront.net/assets/lostmyname/create/girl-xlarge-a0d6a78b40a261eec2e3b729a69130a7.png 220w" width="110" /></div>
+				</label>          </span>
+							</div>
+							<label class="label-bubble label-bubble-error error-gender hidden-on-fablet-down" for="name">error</label>
+						</div>
+
+						<div class="col-1-3">
+							<button class="button button--primary widest" type="submit">Create your book</button>
+						</div>
+
+					</div>
+				</form></div>
+
+		</div>
+	</div>
+
+	<div class="panel-second">
+		<img src="https://i.imgur.com/6KIVTsW.png">
+	</div>
+
+	<div class="panel-third">
+		<img src="https://i.imgur.com/KYzJPCa.png">
+	</div>
+
+	<button class="basket">Add to basket</button>
+
+	<div class="book1">
+		<img src="https://i.imgur.com/9w2oX2l.png">
+
+		<span>Callum</span>
+	</div>
+
+	<div class="book2">
+		<img src="https://i.imgur.com/9w2oX2l.png">
+
+		<span>Bob</span>
+	</div>
+
+	<div class="book-wrapped">
+		<img src="https://i.imgur.com/wAHoP7R.png">
+
+		<span>Bob</span>
+	</div>
+
+	<button class="checkout">Ready to order!</button>
+
+	<div class="details">
+		<h2>Your details:</h2>
+		<p>
+			<input placeholder="Your name" required>
+			<input type="email" placeholder="Your email address" required>
+		</p>
+	</div>
+
+	<div class="address">
+		<h2>Shipping address:</h2>
+		<p><input placeholder="Address line 1" required></p>
+		<p><input placeholder="Address line 2"></p>
+		<p><input placeholder="Town / City" required></p>
+		<p><input placeholder="Country dropdown"></p>
+		<p><input placeholder="Post code" required></p>
+		<p><input placeholder="Phone" required></p>
+	</div>
+
+	<div class="billing">
+		<h2>Payment:</h2>
+
+		<a href="http://bradfrostweb.com/blog/post/single-field-credit-card-input-pattern/"><img src="http://bradfrostweb.com/wp-content/uploads/2014/04/single-cc-demo.gif" width="400"></a>
+
+		<p>Use same billing address? <input type="checkbox" checked></p>
+
+		<p><button>Pay!</button></p>
+	</div>
+
+	<script src="//code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+</html>
