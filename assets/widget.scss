@@ -1,18 +1,34 @@
-.portrait {
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.widget {
+	width: 100%;
+	min-width: 100%;
+}
+
+@media all and (orientation: portrait) {
 	.page {
 		margin-bottom: 10px;
+
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
-.landscape {
+@media all and (orientation: landscape) {
 	.book {
 		display: table;
+		height: 100%;
 	}
 
 	.pages {
 		display: table-row;
 		vertical-align: top;
 		clear: both;
+		height: 100%;
 	}
 
 	.page {
