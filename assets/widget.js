@@ -33,3 +33,7 @@ $(window).triggerHandler('orientationchange');
 $('.js-widget-open').on('click', function () {
 	$widget.fadeIn();
 });
+
+$('.js-close').on('click', function () {
+	$widget.fadeOut();
+});
