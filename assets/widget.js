@@ -8,3 +8,8 @@ $(window).on('orientationchange resize', function () {
 });
 
 $(window).triggerHandler('orientationchange');
+
+var $widget = $('.widget');
+$('.js-widget-open').on('click', function () {
+	$widget.fadeIn();
+});

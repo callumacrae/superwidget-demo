@@ -1,11 +1,48 @@
 * {
 	margin: 0;
 	padding: 0;
+
+	box-sizing: border-box;
+}
+
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.widget-open {
+	width: 100%;
+	height: 300px;
+	max-width: 485px;
+	overflow: hidden;
+
+	background: url(//lmn-assets.imgix.net/widget/en-GB/images/book_tip.png?q=60&amp;w=970&amp;dpr=1) no-repeat;
+	background-size: 200%;
+	cursor: pointer;
 }
 
 .widget {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	display: none;
 	width: 100%;
 	min-width: 100%;
+	height: 100%;
+
+	background-color: white;
+	overflow: auto;
+
+	-webkit-overflow-scrolling: touch;
 }
 
 @media all and (orientation: portrait) {
@@ -21,20 +58,17 @@
 @media all and (orientation: landscape) {
 	.book {
 		display: table;
-		height: 100%;
 	}
 
 	.pages {
 		display: table-row;
 		vertical-align: top;
 		clear: both;
-		height: 100%;
 	}
 
 	.page {
 		display: table-cell;
 		min-width: 990px;
-		height: 100%;
 
 		&:last-child {
 			min-width: 970px;
@@ -42,7 +76,7 @@
 
 		img {
 			width: 970px;
-			max-height: 100%;
+			height: 320px
 		}
 	}
 }
