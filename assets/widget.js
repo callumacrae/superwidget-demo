@@ -23,6 +23,7 @@ $(window).on('orientationchange resize', function () {
 	if (portrait) {
 		$widget.scrollTop(scrollCurrent);
 	} else {
+		$widget.scrollTop(0); // THIS IS A HACK
 		$widget.scrollLeft(scrollCurrent * RATIO);
 	}
 });
