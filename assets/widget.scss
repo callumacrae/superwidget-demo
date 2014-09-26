@@ -43,6 +43,21 @@ body {
 	overflow: auto;
 
 	-webkit-overflow-scrolling: touch;
+
+	.close {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 3px 10px;
+
+		font-size: 2em;
+		line-height: 1;
+
+		background-color: white;
+		border: 1px black solid;
+		border-top: none;
+		border-right: none;
+	}
 }
 
 @media all and (orientation: portrait) {
