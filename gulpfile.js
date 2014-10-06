@@ -64,5 +64,5 @@ gulp.task('default', ['sass', 'browser-sync'], function () {
 });
 
 gulp.task('heidelberg', ['sass-heidelberg', 'browser-sync-heidelberg'], function () {
-	gulp.watch('heidelberg/**/*.scss', ['sass-heidelberg']);
+	gulp.watch('heidelberg/**/*.{sass,scss}', ['sass-heidelberg']);
 });
